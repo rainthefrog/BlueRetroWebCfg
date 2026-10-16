@@ -12,7 +12,7 @@ export const latestRelease = 'v99.9';
 export async function mockGitHub(page) {
     await page.route('https://api.github.com/repos/darthcloud/BlueRetro/releases/latest', route =>
         route.fulfill({json: {tag_name: latestRelease}}));
-    await page.route('https://api.github.com/repos/darthcloud/BlueRetroWebCfg/contents/map/', route =>
+    await page.route('https://api.github.com/repos/rainthefrog/BlueRetroWebCfg/contents/map/', route =>
         route.fulfill({json: readdirSync(path.join(repoRoot, 'map'))
             .filter(name => name.endsWith('.json'))
             .sort()

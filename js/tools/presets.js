@@ -156,7 +156,7 @@ function onlyUnique(value, index, self) {
 }
 
 function initBlueRetroCfg() {
-    getMapList('https://api.github.com/repos/darthcloud/BlueRetroWebCfg/contents/map/')
+    getMapList('https://api.github.com/repos/rainthefrog/BlueRetroWebCfg/contents/map/')
     .then(files => {
         return fetchMap(presets, files, 0);
     })

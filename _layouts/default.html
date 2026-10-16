@@ -67,7 +67,7 @@ limitations under the License.
     {% if page.icon_url %}<img class="pageIcon" src="{{ page.icon_url }}">{% endif %}
     <h1>{% if page.title %}{{ page.title }}{% else %}{{ page.feature_name }}{% endif %}</h1>
     <nav class="site-nav" aria-label="Main navigation">
-      <a data-home href="{% if page.index %}{{ page.index }}{% else %}https://darthcloud.github.io/BlueRetroWebCfg/index.html{% endif %}">Home</a>
+      <a data-home href="{% if page.index %}{{ page.index }}{% else %}{{ site.gh_pages_url_prefix }}/index.html{% endif %}">Home</a>
       <a data-tool="presets" href="presets.html">Presets</a>
       <a data-tool="controller-setup" href="advance.html">Controller setup</a>
       <a data-tool="firmware" href="ota.html">Firmware update</a>
