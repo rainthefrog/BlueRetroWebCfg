@@ -17,3 +17,6 @@ exclude:
   - node_modules
   - Gemfile
   - vendor
+  - Dockerfile
+  - docker-compose.yml
+  - tests
